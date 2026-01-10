@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-   server: {
+  server: {
     proxy: {
       "/api": {
         target: "http://localhost:3000",
@@ -13,6 +13,12 @@ export default defineConfig({
     },
   },
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  fontFamily: {
+  brand: ["Space Grotesk", "sans-serif"],
+  serif: ["Playfair Display", "serif"],
+  sans: ["Inter", "sans-serif"],
+},
+
   theme: {
     extend: {
       colors: {

@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const messageSchema = new mongoose.Schema(
   {
     name: {
@@ -17,7 +16,7 @@ const messageSchema = new mongoose.Schema(
     pic: {
       type: String,
       required: true,
-      default : "",
+      default: "https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png",
     },
   },
   {
